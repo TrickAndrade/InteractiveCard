@@ -1,0 +1,110 @@
+<!-- Declaração do tipo de documento como HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Início do documento HTML com idioma definido como português do Brasil -->
+<head>
+    <!-- Configuração de caracteres para suportar acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Configuração para ajustar a largura da tela em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Pinky e o Cérebro</title>
+    
+    <!-- Importação da fonte Roboto do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilização interna usando CSS -->
+    <style>
+        /* Configuração do corpo da página */
+        body {
+            display: flex; /* Define o layout como flexível */
+            justify-content: center; /* Centraliza os elementos horizontalmente */
+            align-items: center; /* Centraliza os elementos verticalmente */
+            height: 100vh; /* Define a altura da página como 100% da tela */
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Define um fundo gradiente */
+            font-family: 'Roboto', sans-serif; /* Aplica a fonte importada */
+        }
+        
+        /* Estilização do cartão */
+        .cartao {
+            background: white; /* Define o fundo como branco */
+            padding: 20px; /* Adiciona espaçamento interno */
+            border-radius: 15px; /* Arredonda as bordas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao cartão */
+            text-align: center; /* Centraliza o texto dentro do cartão */
+            transition: transform 0.3s; /* Define uma transição suave para transformações */
+        }
+        
+        /* Efeito de zoom ao passar o mouse sobre o cartão */
+        .cartao:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho do cartão */
+        }
+        
+        /* Estilização da imagem dentro do cartão */
+        img {
+            width: 200px; /* Define a largura da imagem */
+            border-radius: 10px; /* Arredonda os cantos da imagem */
+        }
+        
+        /* Margem superior para a seção de atributos */
+        .atributos {
+            margin-top: 10px;
+        }
+        
+        /* Estilização do botão "Ver Mais" */
+        .ver-mais {
+            background: #ff7e5f; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove a borda */
+            padding: 10px; /* Adiciona espaçamento interno */
+            margin-top: 10px; /* Adiciona margem superior */
+            cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+            border-radius: 5px; /* Arredonda as bordas do botão */
+            transition: background 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+        }
+        
+        /* Efeito de mudança de cor ao passar o mouse sobre o botão */
+        .ver-mais:hover {
+            background: #e76b50; /* Muda a cor de fundo do botão */
+        }
+        
+        /* Estilização da seção de informações extras */
+        .info-extra {
+            display: none; /* Esconde as informações extras por padrão */
+            margin-top: 10px; /* Adiciona margem superior */
+        }
+        
+        /* Exibe as informações extras quando o botão é pressionado */
+        .ver-mais:focus + .info-extra {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container do cartão -->
+    <div class="cartao">
+        <!-- Título principal do cartão -->
+        <h1>Pinky e o Cérebro</h1>
+        
+        <!-- Imagem do cartão -->
+        <img src="img/pinky_cerebro.jpg" alt="Pinky e o Cérebro">
+        
+        <!-- Descrição curta -->
+        <p>Dois ratos de laboratório que tentam dominar o mundo todas as noites!</p>
+        
+        <!-- Seção de atributos dos personagens -->
+        <div class="atributos">
+            <p><strong>Inteligência:</strong> 100 (Cérebro), 20 (Pinky)</p>
+            <p><strong>Astúcia:</strong> 90 (Cérebro), 30 (Pinky)</p>
+            <p><strong>Humor:</strong> 40 (Cérebro), 100 (Pinky)</p>
+        </div>
+        
+        <!-- Botão para revelar mais informações -->
+        <button class="ver-mais">Ver Mais</button>
+        
+        <!-- Seção escondida que aparece ao clicar no botão -->
+        <div class="info-extra">
+            <p>Cérebro é um gênio determinado, enquanto Pinky é seu ajudante atrapalhado.</p>
+        </div>
+    </div>
+</body>
+</html>
