@@ -20,3 +20,8 @@ Este projeto apresenta um **card interativo** inspirado na animação **Pinky e 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/TrickAndrade/InteractiveCard.git
+
+## 🌐 Veja o site online!
+
+Acesse o projeto interativo diretamente no GitHub Pages:  
+👉 [https://trickandrade.github.io/InteractiveCard/](https://trickandrade.github.io/InteractiveCard/)
